@@ -1,12 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const corsOptions = {
-    origin: "https://reactapp-green-theta.vercel.app", // Your frontend URL
-    methods: "GET,POST,PUT,DELETE",
-    allowedHeaders: "Content-Type,Authorization"
-  };
-  app.use(cors(corsOptions));
+
+  app.use(cors());
   
   app.use(express.json());
 
